@@ -152,13 +152,17 @@ source ~/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-if [ -e $HOME/.zsh_aliases ]; then
-    source $HOME/.zsh_aliases
+if [ -e $HOME/.config/.zsh_aliases ]; then
+    source $HOME/.config/.zsh_aliases
 fi
-if [ -e $HOME/.zsh_functions ]; then
-    source $HOME/.zsh_functions
+if [ -e $HOME/.config/.zsh_functions ]; then
+    source $HOME/.config/.zsh_functions
 fi
 
 export EDITOR=nvim
 
 bindkey '^E' autosuggest-accept
+
+# Nvm stuff for node
+export NVM_DIR=~/.nvm
+ [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"

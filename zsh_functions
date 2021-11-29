@@ -1,8 +1,0 @@
-function eroad() {
-	code ~/eroad/${1}
-}
-
-function eroadvpn() {
-        /opt/forticlient/fortivpn disconnect && 
-        /opt/forticlient/fortivpn connect "EROAD Albany VPN"
-}
