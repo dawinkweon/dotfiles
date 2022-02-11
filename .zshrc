@@ -166,3 +166,6 @@ bindkey '^E' autosuggest-accept
 # Nvm stuff for node
 export NVM_DIR=~/.nvm
  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# Fly completion
+source <(fly completion --shell zsh)
