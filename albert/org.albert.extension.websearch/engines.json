@@ -1,0 +1,86 @@
+[
+    {
+        "iconPath": "/home/dawinkweon/.config/albert/org.albert.extension.websearch/{8f674b89-2756-432e-84d2-d6b80d171330}.",
+        "name": "Github MyEROAD",
+        "trigger": "myeroad",
+        "url": "https://github.com/eroad/myeroad-portal"
+    },
+    {
+        "iconPath": "/home/dawinkweon/.config/albert/org.albert.extension.websearch/{3a4d8a41-d373-4d59-881b-7b5bd4b05cc7}.",
+        "name": "Github PIG",
+        "trigger": "pig",
+        "url": "https://github.com/eroad/partner-integrations-gateway"
+    },
+    {
+        "iconPath": ":google",
+        "name": "Google",
+        "trigger": "gg ",
+        "url": "https://www.google.com/search?q=%s"
+    },
+    {
+        "iconPath": ":youtube",
+        "name": "Youtube",
+        "trigger": "yt ",
+        "url": "https://www.youtube.com/results?search_query=%s"
+    },
+    {
+        "iconPath": ":amazon",
+        "name": "Amazon",
+        "trigger": "ama ",
+        "url": "http://www.amazon.com/s/?field-keywords=%s"
+    },
+    {
+        "iconPath": ":ebay",
+        "name": "Ebay",
+        "trigger": "eb ",
+        "url": "http://www.ebay.com/sch/i.html?_nkw=%s"
+    },
+    {
+        "iconPath": "/home/dawin.kweon/.config/albert/org.albert.extension.websearch/{8c95705c-15c8-4714-8af9-9bebcd0516b6}.",
+        "name": "GitHub",
+        "trigger": "gh ",
+        "url": "https://github.com/eroad/%s"
+    },
+    {
+        "iconPath": ":wolfram",
+        "name": "Wolfram Alpha",
+        "trigger": "=",
+        "url": "https://www.wolframalpha.com/input/?i=%s"
+    },
+    {
+        "iconPath": ":duckduckgo",
+        "name": "DuckDuckGo",
+        "trigger": "dd ",
+        "url": "https://duckduckgo.com/?q=%s"
+    },
+    {
+        "iconPath": "/home/dawin.kweon/.config/albert/org.albert.extension.websearch/{3e65998e-7b91-432c-9eb9-d8fda145e267}.",
+        "name": "Scrum Board",
+        "trigger": "scr",
+        "url": "https://jira.eroad.io/secure/RapidBoard.jspa?rapidView=386&view=planning.nodetail&quickFilter=1738&issueLimit=100"
+    },
+    {
+        "iconPath": "/home/dawin.kweon/.config/albert/org.albert.extension.websearch/{b47b60f9-f5e0-441d-959b-d24b2989a3f8}.",
+        "name": "Jira",
+        "trigger": "r ",
+        "url": "https://jira.eroad.io/browse/%s"
+    },
+    {
+        "iconPath": "/home/dawinkweon/.config/albert/org.albert.extension.websearch/{36a027eb-9768-4d01-9e72-ba84fc628a75}.",
+        "name": "Scrum board",
+        "trigger": "sc",
+        "url": "https://jira.eroad.io/secure/RapidBoard.jspa?rapidView=386&view=planning.nodetail&quickFilter=1738&issueLimit=100"
+    },
+    {
+        "iconPath": "/home/dawinkweon/.config/albert/org.albert.extension.websearch/{cd1f62a3-8e98-4c0c-a187-b72ba9aba165}.",
+        "name": "Concourse",
+        "trigger": "cc ",
+        "url": "https://concourse.eroad.io/teams/main/pipelines/%s"
+    },
+    {
+        "iconPath": "/home/dawinkweon/.config/albert/org.albert.extension.websearch/{b50d05ac-0757-4c68-bce0-7fdf19c1897b}.",
+        "name": "Github Pull Requests",
+        "trigger": "pulls",
+        "url": "https://github.com/pulls"
+    }
+]
