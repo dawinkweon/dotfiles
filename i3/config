@@ -17,7 +17,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:Noto Sans 18
+font pango:Noto Sans Regular 18
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -196,12 +196,14 @@ bindsym $mod+r mode "resize"
 # You can also use any non-zero value if you'd like to have a border
 for_window [class=".*"] border pixel 0
 
-gaps inner 5
+gaps inner 6
 gaps bottom 45
 # smart_gaps on
 
 # Background image
-exec --no-startup-id feh --bg-scale ~/Pictures/cafe-bg.jpg
+#exec --no-startup-id feh --bg-fill ~/Pictures/fuji2.jpg
+# exec --no-startup-id feh --bg-fill ~/Pictures/cafe-bg.jpg
+exec --no-startup-id feh --bg-fill ~/Pictures/pink1.jpg
 
 # Picom for blurring
 exec --no-startup-id picom -b
