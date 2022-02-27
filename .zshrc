@@ -169,3 +169,5 @@ export NVM_DIR=~/.nvm
 
 # Fly completion
 source <(fly completion --shell zsh)
+
+pokemon-colorscripts -n `get-pokemon`

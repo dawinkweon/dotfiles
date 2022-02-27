@@ -10,8 +10,10 @@ Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'junegunn/seoul256.vim'
 Plug 'tomasiser/vim-code-dark'
+Plug 'itchyny/lightline.vim'
+Plug 'dylanaraps/wal.vim'
+
 
 call plug#end()
 
@@ -27,4 +29,12 @@ set expandtab
 
 syntax on
 let g:vscode_style = "dark"
-colorscheme nord
+" colorscheme nord
+
+" set lighline theme inside lightline config
+" let g:lightline = { 'colorscheme': 'nord' }
+
+:command NE NERDTree
+
+
+colorscheme wal

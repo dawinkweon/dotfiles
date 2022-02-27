@@ -17,7 +17,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:ProFont For Powerline 18
+font pango:Noto Sans 18
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -43,7 +43,7 @@ bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id alacritty 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -164,6 +164,7 @@ bindsym $mod+c exec --no-startup-id code
 bindsym $mod+g exec --no-startup-id google-chrome
 
 bindsym $mod+p exec --no-startup-id pavucontrol 
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -196,7 +197,8 @@ bindsym $mod+r mode "resize"
 for_window [class=".*"] border pixel 0
 
 gaps inner 5
-smart_gaps on
+gaps bottom 45
+# smart_gaps on
 
 # Background image
 exec --no-startup-id feh --bg-scale ~/Pictures/cafe-bg.jpg
@@ -212,6 +214,10 @@ exec --no-startup-id albert
 exec --no-startup-id indicator-sound-switcher
 
 exec --no-startup-id caffeine-indicator
+
+exec --no-startup-id blueman-tray
+
+exec --no-startup-id google-chrome 
 
 # Base colors
 set $base00 #1d2021
@@ -241,21 +247,21 @@ client.unfocused         $base01 $base00 $base05 $base01   $base01
 #client.urgent           $base08 $base08 $base00 $base08   $base0F
 #client.placeholder      $base00 $base00 $base05 $base00   $base0F
 #client.background       $base0F
-bar {
-        status_command i3status
-        position bottom
-        colors {
-                background #282A36
-                statusline #F8F8F2
-                separator  #44475A
-
-                focused_workspace  #44475A #44475A #F8F8F2
-                active_workspace   #282A36 #44475A #F8F8F2
-                inactive_workspace #282A36 #282A36 #BFBFBF
-                urgent_workspace   #FF5555 #FF5555 #F8F8F2
-                binding_mode       #FF5555 #FF5555 #F8F8F2
-        }
-}
+# bar {
+        # status_command i3status
+        # position bottom
+        # colors {
+                # background #282A36
+                # statusline #F8F8F2
+                # separator  #44475A
+# 
+                # focused_workspace  #44475A #44475A #F8F8F2
+                # active_workspace   #282A36 #44475A #F8F8F2
+                # inactive_workspace #282A36 #282A36 #BFBFBF
+                # urgent_workspace   #FF5555 #FF5555 #F8F8F2
+                # binding_mode       #FF5555 #FF5555 #F8F8F2
+        # }
+# }
 # Set up workspaces on monitors
 # Currently all commented out, let's have completely freedom.
 # workspace 1 output DP-3
