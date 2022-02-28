@@ -6,3 +6,8 @@ alias gosleep="shutdown -h"
 alias r="ranger"
 alias lz="lazygit"
 alias flylogin="fly --target main login --concourse-url https://concourse.eroad.io"
+
+# Git aliases
+alias gc="git commit"
+alias gsm="git switch master"
+alias gp="git push"
