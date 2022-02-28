@@ -20,5 +20,19 @@
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.fontSize": 18
+    "editor.fontSize": 18,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "window.zoomLevel": -1,
+    "editor.fontFamily": "'iosevka', 'Droid Sans Mono', 'monospace', monospace"
 }
