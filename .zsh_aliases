@@ -11,3 +11,5 @@ alias flylogin="fly --target main login --concourse-url https://concourse.eroad.
 alias gc="git commit"
 alias gsm="git switch master"
 alias gp="git push"
+
+alias power="~/.config/polybar/blocks/scripts/powermenu.sh"
