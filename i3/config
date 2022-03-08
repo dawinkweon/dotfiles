@@ -17,7 +17,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:iosevka nerd font 14
+font pango:Noto Sans Regular 16
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -165,6 +165,8 @@ bindsym $mod+g exec --no-startup-id google-chrome
 
 bindsym $mod+p exec --no-startup-id pavucontrol 
 
+bindsym $mod+i exec --no-startup-id gnome-control-center 
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -269,8 +271,8 @@ client.unfocused         $base01 $base00 $base05 $base01   $base01
 # }
 # Set up workspaces on monitors
 # Currently all commented out, let's have completely freedom.
-# workspace 1 output DP-3
-# workspace 2 output DP-3
+workspace 1 output DP-1-1
+workspace 2 output DP-1-2
 # workspace 3 output DP-3
 # workspace 4 output DP-3
 # workspace 5 output DP-3
@@ -280,5 +282,5 @@ client.unfocused         $base01 $base00 $base05 $base01   $base01
 # workspace 9 output DP-3
 # workspace 0 output DP-3
 # Laptop monitor on wksp 9 and 10
-# workspace 9 output eDP-1
-# workspace 10 output eDP-1
+ workspace 9 output eDP-1
+ workspace 10 output eDP-1
