@@ -1,8 +1,26 @@
+#!/bin/bash
 function eroad() {
 	code ~/eroad/${1}
 }
 
-function eroadvpn() {
+function evpn() {
         /opt/forticlient/fortivpn disconnect && 
         /opt/forticlient/fortivpn connect "EROAD Albany VPN"
+}
+
+function kill5432() {
+  res=$(sudo lsof -i:5432 -F p)
+  echo "DEBUG: result of sudo lsof -i:5432 -F p => \n$res"
+  token=${res[1]}
+  # echo "DEBUG: pid discovered as => $token"
+  echo "Killing pid ${token}"
+  sudo kill ${token}
+  
+
+  if [[ $? == 0 ]]
+  then
+    echo "Successfully killed ${token}"
+  else
+    echo "Failed to kill"
+  fi
 }
