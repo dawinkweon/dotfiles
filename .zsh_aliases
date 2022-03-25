@@ -13,3 +13,5 @@ alias gsm="git switch master"
 alias gp="git push"
 
 alias power="~/.config/polybar/blocks/scripts/powermenu.sh"
+
+alias mvnl="mvn -s ~/.m2/settings-local.xml"
