@@ -1,3 +1,4 @@
+
 source ~/zsh-snap/znap.zsh
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -140,13 +141,6 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-zstyle ':autocomplete:*' min-input 5  # int
-# Wait until this many characters have been typed, before showing completions.
-
-source ~/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 if [ -e $HOME/.config/.zsh_aliases ]; then
     source $HOME/.config/.zsh_aliases
 fi
@@ -165,4 +159,4 @@ export NVM_DIR=~/.nvm
 # Fly completion
 source <(fly completion --shell zsh)
 
-# rxfetch
+DPI=1.5
