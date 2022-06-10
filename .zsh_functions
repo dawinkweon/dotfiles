@@ -8,3 +8,7 @@ function evpn() {
         /opt/forticlient/fortivpn disconnect && 
         /opt/forticlient/fortivpn connect "EROAD Albany VPN"
 }
+
+function port() {
+  sudo lsof -i:${1}
+}
