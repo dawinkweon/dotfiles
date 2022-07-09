@@ -160,3 +160,11 @@ export NVM_DIR=~/.nvm
 source <(fly completion --shell zsh)
 
 DPI=1.5
+
+
+###########################################################################
+# allow $USER to use keys. Only enter once and it will remain enabled till
+# you delete it or reboot the server 
+###########################################################################
+/usr/bin/keychain -q $HOME/.ssh/id_ed25519 $HOME/.ssh/coretex > /dev/null
+source $HOME/.keychain/$(hostname)-sh
