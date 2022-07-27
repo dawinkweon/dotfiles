@@ -168,3 +168,5 @@ DPI=1.5
 ###########################################################################
 /usr/bin/keychain -q $HOME/.ssh/id_ed25519 $HOME/.ssh/coretex > /dev/null
 source $HOME/.keychain/$(hostname)-sh
+
+set shell=zsh

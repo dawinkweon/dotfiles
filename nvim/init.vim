@@ -14,11 +14,15 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'itchyny/lightline.vim'
 Plug 'dylanaraps/wal.vim'
 
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+
+" For quick cd to repo
+Plug 'cljoly/telescope-repo.nvim'
 
 call plug#end()
 
 map f <Plug>(easymotion-prefix)
-:inoremap <C-o> <Esc>
 
 filetype plugin indent on
 
