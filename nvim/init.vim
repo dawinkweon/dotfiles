@@ -39,6 +39,13 @@ let g:vscode_style = "dark"
 " let g:lightline = { 'colorscheme': 'nord' }
 
 :command NE NERDTree
-
+:command T term
+:command PF Telescope find_files
+:command PG Telescope live_grep
 
 colorscheme wal
+
+set shell=zsh
+
+tnoremap <esc> <C-\><C-N>
+
