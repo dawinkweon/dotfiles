@@ -24,6 +24,8 @@ call plug#end()
 
 map f <Plug>(easymotion-prefix)
 
+imap jj <Esc>
+
 filetype plugin indent on
 
 set tabstop=2
