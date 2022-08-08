@@ -42,8 +42,8 @@ let g:vscode_style = "dark"
 
 :command NE NERDTree
 :command T term
-:command PF Telescope find_files
-:command PG Telescope live_grep
+:command TF Telescope find_files
+:command TL Telescope live_grep
 
 colorscheme wal
 
