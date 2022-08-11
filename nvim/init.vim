@@ -1,4 +1,5 @@
-:set relativenumber
+" uncomment for relative line numbers
+" :set relativenumber
 
 call plug#begin()
 
