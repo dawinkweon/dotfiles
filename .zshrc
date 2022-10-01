@@ -160,3 +160,6 @@ eval `ssh-agent` > /dev/null
 # source $HOME/.keychain/$(hostname)-sh
 
 set shell=zsh
+
+source <(kubectl completion zsh)
+
