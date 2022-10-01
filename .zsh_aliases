@@ -15,3 +15,4 @@ alias gp="git push"
 alias power="~/.config/polybar/blocks/scripts/powermenu.sh"
 
 alias mvnl="mvn -s ~/.m2/settings-local.xml"
+alias h="cd /mnt/c/Users/dawin.kweon"
