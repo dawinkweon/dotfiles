@@ -163,3 +163,7 @@ set shell=zsh
 
 source <(kubectl completion zsh)
 
+# Set typewritten ZSH as a prompt
+fpath+=$HOME/.zsh/typewritten
+autoload -U promptinit; promptinit
+prompt typewritten
