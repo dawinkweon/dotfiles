@@ -1,5 +1,5 @@
-
 source ~/zsh-snap/znap.zsh
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -77,7 +77,6 @@ plugins=(
         sudo
         autojump
 )
-
 if [[ -e $ZSH/oh-my-zsh.sh ]]; then
 	source $ZSH/oh-my-zsh.sh
 fi
