@@ -4,7 +4,7 @@ source ~/zsh-snap/znap.zsh
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/dawinkweon/.oh-my-zsh"
+export ZSH="~/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -78,7 +78,9 @@ plugins=(
         autojump
 )
 
-source $ZSH/oh-my-zsh.sh
+if [[ -e $ZSH/oh-my-zsh.sh ]]; then
+	source $ZSH/oh-my-zsh.sh
+fi
 
 # User configuration
 
@@ -141,11 +143,11 @@ complete -W "NSGlobalDomain" defaults;
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
-if [ -e $HOME/.config/.zsh_aliases ]; then
-    source $HOME/.config/.zsh_aliases
+if [ -e $HOME/dotfiles/.zsh_aliases ]; then
+    source $HOME/dotfiles/.zsh_aliases
 fi
-if [ -e $HOME/.config/.zsh_functions ]; then
-    source $HOME/.config/.zsh_functions
+if [ -e $HOME/dotfiles/.zsh_functions ]; then
+    source $HOME/dotfiles/.zsh_functions
 fi
 
 export EDITOR=nvim
@@ -157,7 +159,9 @@ export NVM_DIR=~/.nvm
  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Fly completion
-source <(fly completion --shell zsh)
+if [[ -e /usr/bin/fly ]]; then
+	source <(fly completion --shell zsh)
+fi
 
 DPI=1.5
 
