@@ -107,22 +107,11 @@ fi
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias shopt='/usr/bin/shopt'
-
 
 export PATH="$HOME/bin:$PATH"
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 source $HOME/.config/broot/launcher/bash/br
-
-# Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob;
-
-# Append to the Bash history file, rather than overwriting it
-shopt -s histappend;
-
-# Autocorrect typos in path names when using `cd`
-shopt -s cdspell;
 
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
