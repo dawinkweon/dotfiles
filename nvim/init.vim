@@ -1,6 +1,3 @@
-" uncomment for relative line numbers
-" :set relativenumber
-
 call plug#begin()
 
 Plug 'psliwka/vim-smoothie'
@@ -9,46 +6,59 @@ Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf.vim'
-Plug 'arcticicestudio/nord-vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'tomasiser/vim-code-dark'
 Plug 'itchyny/lightline.vim'
 Plug 'dylanaraps/wal.vim'
 
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 
 " For quick cd to repo
 Plug 'cljoly/telescope-repo.nvim'
+" vim-plug
+
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'OmniSharp/omnisharp-vim'
+
+" color themes
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+
+" treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+" lazygit from nvim
+Plug 'kdheepak/lazygit.nvim'
 
 call plug#end()
 
 map f <Plug>(easymotion-prefix)
 
-imap jj <Esc>
-
 filetype plugin indent on
 
 set tabstop=2
 set shiftwidth=2
+set nu
 " On pressing tab, insert spaces defined above
 set expandtab
 
 syntax on
-let g:vscode_style = "dark"
-" colorscheme nord
-
-" set lighline theme inside lightline config
-" let g:lightline = { 'colorscheme': 'nord' }
 
 :command NE NERDTree
 :command T term
 :command TF Telescope find_files
 :command TL Telescope live_grep
-
-colorscheme wal
+:command L LazyGit
 
 set shell=zsh
 
 tnoremap <esc> <C-\><C-N>
+
+let NERDTreeShowBookmarks=1
+
+autocmd VimEnter * NERDTree
+
+inoremap jj <Esc>
+
+let g:OmniSharp_server_use_mono = 1
+
+colorscheme catppuccin-mocha
 
