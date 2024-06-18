@@ -1,0 +1,25 @@
+import = ["/Users/dawin.kweon/dotfiles/alacritty/catppuccin-mocha.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 14.0
+
+[font.normal]
+family = "MesloLGM Nerd Font"
+
+[window]
+decorations = "buttonless"
+dynamic_padding = false
+opacity = 0.9
+option_as_alt = "Both"
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 100
+lines = 40
+
+[window.padding]
+x = 32
+y = 32
